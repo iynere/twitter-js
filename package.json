@@ -22,6 +22,7 @@
     "express": "^4.14.0",
     "lodash": "^4.17.4",
     "nunjucks": "^3.0.0",
+    "socket.io": "^1.7.2",
     "volleyball": "^1.4.1"
   }
 }
