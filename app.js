@@ -2,6 +2,7 @@ const express = require( 'express' );
 const volleyball = require('volleyball');
 const nunjucks = require('nunjucks');
 const routes = require('./routes/');
+const bodyParser = require('body-parser');
 const app = express(); // creates an instance of an express application
 
 app.listen(3000, function() {
