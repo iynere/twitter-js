@@ -30,7 +30,7 @@ module.exports = function(io) {
 		var name = req.body.name;
 		var text = req.body.text;
 		tweetBank.add(name, text);
-		res.redirect('/');
+		res.redirect('/users/' + name);
 	});
 
 	return router;
