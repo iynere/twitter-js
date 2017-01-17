@@ -3,9 +3,11 @@ const _ = require('lodash');
 
 var data = [];
 
+var tweetId = 1;
 
 function add (name, content) {
-  data.push({ name: name, content: content });
+  data.push({name: name, content: content, id: tweetId});
+  tweetId++;
 }
 
 function list () {
@@ -39,6 +41,3 @@ const getFakeTweet = function() {
 for (let i = 0; i < 10; i++) {
   module.exports.add( getFakeName(), getFakeTweet() );
 }
-
-console.log(find(function(tweeter){return tweeter.name.includes('Karen')}))
-//find searches data array, which is array of obj. Each obj has 2 props: name, content.

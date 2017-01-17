@@ -58,3 +58,9 @@ code {
 .content .by {
   font-weight: bold;
 }
+.col-md-9 {
+  word-wrap: break-word;
+  width: 525px;
+}
+
+/*<div style="word-wrap: break-word; width: 100px" >*/
